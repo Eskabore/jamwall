@@ -9,6 +9,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
+import userRoutes from "./routes/users.js";
 import { register } from "./controllers/auth.js";
 import { verifyToken } from "./middleware/auth.js";
 
@@ -38,9 +39,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 /* ROUTES WITH FILES */
-
-/* ROUTES WITH FILES */
 app.post("/auth/register", upload.single("picture"), verifyToken, register);
+app.use("/users", userRoutes);
 
 /* ROUTES */
 app.use("/auth", authRoutes);
