@@ -16,7 +16,7 @@ import { createPost } from "./controllers/posts.js";
 import { verifyToken } from "./middleware/auth.js";
 
 /** ADD DATA ONE TIME
-* import User from "./models/User.js";
+* import User from "./models/user.js";
 * import Post from "./models/Post.js";
 * import { users, posts } from "./data/index.js";
 */
