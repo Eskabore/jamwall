@@ -4,7 +4,7 @@ This is a fullstack chat application that allows users to send and receive messa
 
 ## Demo
 
-You can check out a live demo of the chat app [here](https://example.com/).
+You can check out a live demo of the chat app [here](https://jl-turquin.com/).
 
 ## Features
 
